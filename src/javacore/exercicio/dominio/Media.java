@@ -1,10 +1,18 @@
 package javacore.exercicio.dominio;
 
 public class Media {
-    public void imprimeMedia(Funcionario funcionario){
-        double soma = funcionario.salario[0] + funcionario.salario[1] + funcionario.salario[2];
-        double media = soma / 3;
+    public void imprimeMedia(Funcionario funcionario) {
 
-        System.out.printf("Media: %.2f%n",media);
+        if(funcionario.salario == null)
+            return;
+
+        double media = 0;
+        for (double salario : funcionario.salario) {
+            media += salario;
+        }
+
+        media /= funcionario.salario.length;
+
+        System.out.printf("Media: %.2f%n", media);
     }
 }

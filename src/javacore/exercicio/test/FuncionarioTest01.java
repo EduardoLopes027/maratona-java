@@ -12,7 +12,7 @@ public class FuncionarioTest01 {
 
         funcionario.nome = "Mauricio";
         funcionario.idade = 25;
-        funcionario.salario = new double[]{1650.24, 1324.15, 900.0};
+        //funcionario.salario = new double[]{1650.24, 1324.15, 900.0, 300.0};
 
         impressora.imprimeOsDados(funcionario);
         media.imprimeMedia(funcionario);
