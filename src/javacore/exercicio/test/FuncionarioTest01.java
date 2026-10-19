@@ -10,12 +10,12 @@ public class FuncionarioTest01 {
         ImpressoraDados impressora = new ImpressoraDados();
         Media media = new Media();
 
-        funcionario.nome = "Mauricio";
-        funcionario.idade = 25;
-        //funcionario.salario = new double[]{1650.24, 1324.15, 900.0, 300.0};
+        funcionario.setNome("Mauricio");
+        funcionario.setIdade(25);
+        funcionario.setSalario(new double[]{1650.24, 1324.15, 900.0, 300.0, 543.32, 5000.0});
 
         impressora.imprimeOsDados(funcionario);
-        media.imprimeMedia(funcionario);
+        funcionario.imprimeMedia(funcionario);
     }
 
 }
